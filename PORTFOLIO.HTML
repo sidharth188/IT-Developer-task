@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Portfolio</title>
+    <style>
+        /* Basic Reset and General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        header {
+            background: #35424a;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        header p {
+            margin-top: 10px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        section#about, section#contact, footer {
+            background: #fff;
+        }
+
+        section h2 {
+            color: #35424a;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Makes the image circular */
+            float: left;
+            margin: 20px;
+        }
+
+        section p {
+            text-align: justify;
+        }
+
+        section ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+        }
+
+        #skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #skills ul li {
+            background: #e8491d;
+            color: white;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        #projects .project {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        #projects .project img {
+            width: 100%; /* Make project images responsive within their container */
+            height: auto;
+            border-radius: 0; /* Remove circular border for project images */
+            float: none; /* Reset float for project images */
+            margin: 0 0 10px 0; /* Adjust margin for project images */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #e8491d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background: #c13514; /* Darker shade for hover effect */
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer nav {
+            margin-top: 10px;
+        }
+
+        footer nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            header .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+                margin-bottom: 10px;
+            }
+
+            section img {
+                float: none;
+                display: block;
+                margin: 20px auto; /* Center image on smaller screens */
+            }
+
+            section p {
+                text-align: left; /* Reset text align for smaller screens if needed */
+            }
+
+            #skills ul {
+                flex-direction: column; /* Stack skills vertically on smaller screens */
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Siddharth Sagar</h1>
+            <p>BCA | Artificial Intelligence | Enthusiast</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <img src="C:\Users\siddh\Desktop\private\SIDDHARTH.jpg" alt="Profile Picture">
+            <h2>About Me</h2>
+            <p>Dedicated and passionate data enthusiast adept at extracting actionable insights from complex datasets through advanced analytical and visualization methods. An eager and proactive learner, consistently seeking to enhance skills and remain updated on industry trends. Committed to utilizing expertise to propel organizational success and surpass expectations.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>MS Office</li>
+                <li>Artificial Intelligence</li>
+                <li>C++</li>
+                <li>JAVA</li>
+                <li>KOTLIN</li>
+                <li>Machine Learning</li>
+                <li>PowerBi</li>
+                <li>Problem Solving</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <img src="C:\Users\siddh\Desktop\Screenshot 2025-03-28 001844.png" alt="Project 1 Image">
+                <h3>HANGMAN IN C++</h3>
+                <p>The project's core objective is to create a user-friendly and feature-richHangman game with an intuitive graphical user interface.</p>
+            </div>
+            <div class="project">
+                <img src="C:\Users\siddh\Desktop\Screenshot 2025-03-28 001919.png" alt="Project 2 Image">
+                <h3>Tic Tac Toe IN C</h3>
+                <p>This project provides an interactive and enjoyable games experiencefor users of all ages. The game is designed to be played on variousplatforms including desktop, computers, mobile, devices and webbrowsers, making it accessible to a wide audience.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>Download my resume to learn more about my qualifications and experience.</p>
+            <a href="C:\Users\siddh\Downloads\SIDDHARTH RESUME 1 .pdf" target="_blank" class="button">Download Resume (PDF)</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out!</p>
+            <ul>
+                <li>Email: <a href="mailto:siddharthsagar188@gmail.com">siddharthsagar188@gmail.com</a></li>
+                <li>Phone: 9570009637</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/siddharth-sagar-7a6bb4269?lipi=urn%3Ali%3Apage%3Ad_flagship3_messaging_conversation_detail%3BY0m5OaWDR0e1kLrucqPFpA%3D%3D" target="_blank">https://www.linkedin.com/in/siddharth-sagar-7a6bb4269?lipi=urn%3Ali%3Apage%3Ad_flagship3_messaging_conversation_detail%3BY0m5OaWDR0e1kLrucqPFpA%3D%3D</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Siddharth Sagar. All rights reserved.</p>
+            <nav>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>

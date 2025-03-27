@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .calculator-container {
+            background-color: #333;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .title {
+            font-family: 'Cookie', cursive;
+            font-size: 3em;
+            color: #eee;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .display {
+            background-color: #444;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .display input {
+            width: 100%;
+            height: 50px;
+            background-color: transparent;
+            border: none;
+            color: #eee;
+            font-size: 1.5em;
+            text-align: right;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .keys {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+        }
+
+        .button {
+            background-color: #555;
+            color: #eee;
+            border: none;
+            border-radius: 8px;
+            padding: 15px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .button:hover {
+            background-color: #777;
+        }
+
+        .button.operator {
+            background-color: #f9aa00;
+            color: #333;
+        }
+
+        .button.operator:hover {
+            background-color: #f8b933;
+        }
+
+        .button.clear {
+            background-color: #a0a0a0;
+            color: #333;
+        }
+
+        .button.clear:hover {
+            background-color: #c0c0c0;
+        }
+
+        .button.equal {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        .button.equal:hover {
+            background-color: #45a049;
+        }
+        .button.backspace {
+            background-color: #a0a0a0;
+            color: #333;
+        }
+
+        .button.backspace:hover {
+            background-color: #c0c0c0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="calculator-container">
+        <div class="title">Calculator</div>
+        <div class="display">
+            <input type="text" id="d" readonly>
+        </div>
+        <div class="keys">
+            <button class="button clear" onclick="c('')">C</button>
+            <button class="button" onclick="v('7')">7</button>
+            <button class="button" onclick="v('8')">8</button>
+            <button class="button" onclick="v('9')">9</button>
+            <button class="button operator" onclick="v('/')">/</button>
+            <button class="button" onclick="v('4')">4</button>
+            <button class="button" onclick="v('5')">5</button>
+            <button class="button" onclick="v('6')">6</button>
+            <button class="button operator" onclick="v('*')">*</button>
+            <button class="button" onclick="v('1')">1</button>
+            <button class="button" onclick="v('2')">2</button>
+            <button class="button" onclick="v('3')">3</button>
+            <button class="button operator" onclick="v('-')">-</button>
+            <button class="button" onclick="v('0')">0</button>
+            <button class="button" onclick="v('.')">.</button>
+            <button class="button equal" onclick="e()">=</button>
+            <button class="button operator" onclick="v('+')">+</button>
+            <button class="button backspace" onclick="backspace()">DEL</button>
+        </div>
+    </div>
+
+    <script>
+        function c(val) {
+            document.getElementById("d").value = val;
+        }
+
+        function v(val) {
+            document.getElementById("d").value += val;
+        }
+
+        function e() {
+            try {
+                c(eval(document.getElementById("d").value));
+            } catch (e) {
+                c('Error');
+            }
+        }
+
+        function backspace() {
+            let display = document.getElementById("d");
+            display.value = display.value.slice(0, -1);
+        }
+    </script>
+
+</body>
+</html>

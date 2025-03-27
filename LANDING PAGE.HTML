@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODSOFT Landing page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333; /* Dark gray text color */
+        }
+
+        /* Header */
+        header {
+            background-color: #4b3ca7; /* Darker purple */
+            color: #fff;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #codsoft-logo {
+            filter: brightness(0) invert(1);
+            max-height: 50px; /* Adjust as needed */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 2rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f9aa00; /* Orange hover color */
+        }
+
+        /* Hero Section (Home) */
+        #home {
+            background: linear-gradient(rgba(75, 60, 167, 0.7), rgba(75, 60, 167, 0.7)), url("hero-image.jpg"); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        #home h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        #home h2 {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        #home .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #home button {
+            background-color: #f9aa00; /* Orange */
+            color: #fff;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #home button:hover {
+            background-color: #f8b933; /* Lighter orange */
+        }
+
+
+        /* About Us Section */
+        #about {
+            padding: 4rem 0;
+        }
+
+        .about-features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2rem;
+        }
+
+        .feature {
+            text-align: center;
+        }
+
+        .feature img {
+            max-width: 100px;
+            margin-bottom: 1rem;
+        }
+
+        /* Other Sections */
+        section {
+            padding: 3rem 0;
+        }
+
+        h2 {
+            color: #4b3ca7; /* Purple for headings */
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .contact-icons {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-icons li {
+            margin: 0 1rem;
+        }
+
+        .contact-icons a {
+            color: #fff;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .contact-icons a:hover {
+            color: #f9aa00;
+        }
+
+        /* Responsive Design (Example) */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav li {
+                margin: 1rem 0;
+            }
+
+            .about-features {
+                flex-direction: column;
+            }
+
+            .feature {
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="download.png" ... >
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h1>Unlock Your Potential with CODSOFT</h1>
+            <h2>Learn in-demand skills and connect with a thriving community.</h2>
+            <div class="signup-form">
+                <input type="email" placeholder="Insert email address">
+                <button>Sign Up</button>
+            </div>
+            <div class="customer-reviews">
+                <p>Our Happy Customers</p>
+                <p>4.5 (100K Reviews)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>CODSOFT is a vibrant and diverse community that brings together individuals with similar objectives and
+            ultimate goals. Our main focus is on creating opportunities that span various areas, including leadership
+            development, learning, student engagement, and fostering shared interests.</p>
+        <p>We believe in the power of leadership and its ability to drive positive change. That's why we provide
+            platforms and resources for our community members to develop their leadership skills. Through mentorship
+            programs, workshops, and collaborative projects, we empower individuals to take on leadership roles and
+            make a difference in their respective fields.</p>
+        <p>At CODSOFT, we strive to foster a supportive and inclusive environment where everyone can thrive and grow.
+            Whether you're a seasoned professional or just starting your journey, there's a place for you in our
+            community.</p>
+
+        <div class="about-features">
+            <div class="feature">
+                <img src="https://res.cloudinary.com/dnmnqrcw3/image/upload/v1716476573/Artboard_11_swp4kf.png"
+                    alt="Completion Certificate">
+                <h3>Completion Certificate</h3>
+                <p>Receive a certificate upon completing the internship program.</p>
+            </div>
+            <div class="feature">
+                <img src="https://res.cloudinary.com/dnmnqrcw3/image/upload/v1716478865/handshake-partnership-professional-silhouette-icon-hand-shake-business-deal-black-pictogram-cooperation-team-agreement-finance-meeting-icon-isolated-illustration-vector_vzrdlv.jpg"
+                    alt="Placement Support">
+                <h3>Placement Support</h3>
+                <p>Get assistance with job placements through our network.</p>
+            </div>
+            <div class="feature">
+                <img src="https://res.cloudinary.com/dnmnqrcw3/image/upload/v1716479041/15219804681
